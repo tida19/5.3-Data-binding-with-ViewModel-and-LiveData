@@ -89,13 +89,11 @@ class GameFragment : Fragment() {
     private fun onSkip() {
 
         viewModel.onSkip()
-        updateWordText()
-        updateScoreText()
+
     }
     private fun onCorrect() {
         viewModel.onCorrect()
-        updateScoreText()
-        updateWordText()
+
     }
     private fun onEndGame() {
         gameFinished()
